@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="gradlew" type="ShConfigurationType">
+    <option name="SCRIPT_PATH" value="$PROJECT_DIR$/Poomismang/gradlew" />
+    <option name="SCRIPT_OPTIONS" value="" />
+    <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/Poomismang" />
+    <option name="INTERPRETER_PATH" value="" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <method v="2" />
+  </configuration>
+</component>
