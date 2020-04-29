@@ -1,3 +1,5 @@
+package peamine;
+
 import java.io.*;
 import java.util.ArrayList;
 
