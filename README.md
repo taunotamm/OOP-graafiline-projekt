@@ -1,2 +1,4 @@
 # OOP-graafiline-projekt
-Poomismäng
+## Poomismäng
+</br>
+Autorid: Tauno Tamm ja Eero Ääremaa
