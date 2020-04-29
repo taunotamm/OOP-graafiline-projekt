@@ -25,4 +25,7 @@ public class Kasutaja {
     public void setPunktid(int punktid) {
         this.punktid = punktid;
     }
+
+    public Kasutaja() {
+    }
 }
