@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa14c8b2-d273-4d52-a36d-516317fa6521" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peamine/Mang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peamine/Mang.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +25,42 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -39,10 +82,29 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Poomismang [run]">
+    <configuration name="Poomismang [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Peaklass" />
+        <item itemvalue="Gradle.Poomismang [run]" />
       </list>
     </recent_temporary>
   </component>
@@ -57,6 +119,8 @@
       <option name="presentableId" value="Default" />
       <updated>1588168769511</updated>
       <workItem from="1588169075611" duration="197000" />
+      <workItem from="1588195368118" duration="2669000" />
+      <workItem from="1588272903681" duration="1996000" />
     </task>
     <servers />
   </component>
@@ -76,30 +140,38 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="688" y="394" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588169085976" />
+    <state x="364" y="99" key="CommitChangelistDialog2" timestamp="1588275052197">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="364" y="99" key="CommitChangelistDialog2/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588275052197" />
     <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1588169274179">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="620" y="260" key="FileChooserDialogImpl/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588169274179" />
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom" timestamp="1588169275772">
+    <state width="1637" height="203" key="GridCell.Tab.0.bottom" timestamp="1588274903010">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588169275772" />
-    <state width="1637" height="271" key="GridCell.Tab.0.center" timestamp="1588169275771">
+    <state width="1637" height="203" key="GridCell.Tab.0.bottom/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588274903010" />
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588253704139" />
+    <state width="1637" height="203" key="GridCell.Tab.0.center" timestamp="1588274903010">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.center/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588169275771" />
-    <state width="1637" height="271" key="GridCell.Tab.0.left" timestamp="1588169275771">
+    <state width="1637" height="203" key="GridCell.Tab.0.center/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588274903010" />
+    <state width="1877" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588253704139" />
+    <state width="1637" height="203" key="GridCell.Tab.0.left" timestamp="1588274903010">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.left/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588169275771" />
-    <state width="1637" height="271" key="GridCell.Tab.0.right" timestamp="1588169275772">
+    <state width="1637" height="203" key="GridCell.Tab.0.left/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588274903010" />
+    <state width="1877" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588253704139" />
+    <state width="1637" height="203" key="GridCell.Tab.0.right" timestamp="1588274903010">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.right/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588169275772" />
-    <state x="131" y="329" key="com.intellij.ide.util.TipDialog" timestamp="1588169075576">
+    <state width="1637" height="203" key="GridCell.Tab.0.right/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588274903010" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588253704139" />
+    <state x="131" y="329" key="com.intellij.ide.util.TipDialog" timestamp="1588195369070">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="131" y="329" key="com.intellij.ide.util.TipDialog/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588169075576" />
+    <state x="131" y="329" key="com.intellij.ide.util.TipDialog/-1920.-39.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1588195369070" />
     <state x="0" y="138" key="new project wizard" timestamp="1588168792313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

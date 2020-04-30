@@ -32,7 +32,7 @@ public class Mang extends Application{
         this.peaLava = peaLava;
 
         Scene algus = algus();
-        peaLava.setTitle("Poomismäng");  // lava tiitelribale pannakse tekst
+        peaLava.setTitle("Guess the word");  // lava tiitelribale pannakse tekst
 
         peaLava.setScene(algus);  // lavale lisatakse stseen
         peaLava.show();  // lava tehakse nähtavaks
@@ -74,23 +74,25 @@ public class Mang extends Application{
 
 
         TextField tekstiVäli = new TextField();
-        tekstiVäli.setText("Sisesta täht");
+        tekstiVäli.setText("Enter a character");
         addTextLimiter(tekstiVäli, 1);
 
         Button nupp = new Button();
-        nupp.setText("Paku");
+        nupp.setText("Enter");
 
         Label jubaPakutud = new Label();
-        jubaPakutud.setText("Paku mõni täht");
+        jubaPakutud.setText("Guess");
+
+        Label äraArvatud = new Label();
 
         Label vastus = new Label();
         vastus.setText("_".repeat(sõna.length()));
 
         // Kuvame ekraani alumises osas kasutaja andmed
         Label kasutajaNimi = new Label();
-        kasutajaNimi.setText("Kasutajanimi: " + kasutaja.getNimi() + "\t");
+        kasutajaNimi.setText("Name: " + kasutaja.getNimi() + "\t");
         Label punktid = new Label();
-        punktid.setText("Punktid: " + String.valueOf(kasutaja.getPunktid()));
+        punktid.setText("Points: " + String.valueOf(kasutaja.getPunktid()));
 
         HBox kasutajaAndmed = new HBox();
         kasutajaAndmed.getChildren().addAll(kasutajaNimi, punktid);
@@ -105,7 +107,7 @@ public class Mang extends Application{
                 kasutajaValik[0] = tekstiVäli.getText();
                 if(!pakutud.contains(kasutajaValik[0])){
                     pakutud.add(kasutajaValik[0]);
-                    jubaPakutud.setText("Paku mõni täht");
+                    jubaPakutud.setText("Guess");
 
                     StringBuilder stringBuilder = new StringBuilder();
                     for (int i = 0; i < sõna.length(); i++) {
@@ -126,19 +128,20 @@ public class Mang extends Application{
                     vastus.setText(stringBuilder.toString());
 
                     if(sõna.contains(kasutajaValik[0])){
-                        System.out.println("arvasid tähe ära");
+                        äraArvatud.setText("You guessed right! You received 5 points.");
                         kasutaja.setPunktid(kasutaja.getPunktid()+5);
                     }else{
+                        äraArvatud.setText("Wrong guess! You lost 1 point.");
                         kasutaja.setPunktid(kasutaja.getPunktid()-1);
                     }
 
                     // Uuendame kasutaja punktide andmeid
-                    kasutajaNimi.setText("Kasutajanimi: " + kasutaja.getNimi() + "\t");
-                    punktid.setText("Punktid: " + String.valueOf(kasutaja.getPunktid()));
+                    kasutajaNimi.setText("Name: " + kasutaja.getNimi() + "\t");
+                    punktid.setText("Points: " + String.valueOf(kasutaja.getPunktid()));
 
                 }else{
-                    jubaPakutud.setText("See täht on juba sisestatud," +
-                            " palun sisesta uus täht!");
+                    jubaPakutud.setText("This character has been entered already," +
+                            " take another guess!");
                     // Loome erindi mis ütleb kasutajale, et see täht on juba sisestatud
                 }
                 tekstiVäli.setText("");
@@ -160,7 +163,7 @@ public class Mang extends Application{
 
 
         hBox.getChildren().addAll(tekstiVäli, nupp);
-        vBox.getChildren().addAll(jubaPakutud, hBox, joon, vastus, kasutajaAndmed);
+        vBox.getChildren().addAll(jubaPakutud, hBox, äraArvatud, joon, vastus, kasutajaAndmed);
 
         juur.getChildren().add(vBox);  // lõuend lisatakse juure alluvaks
         Scene mangStseen = new Scene(juur);  // luuakse stseen
@@ -171,9 +174,9 @@ public class Mang extends Application{
 
     public Scene algus(){
         Stage algusLava = new Stage();
-        Label nimeLabel = new Label("Sisesta oma nimi");
+        Label nimeLabel = new Label("Enter your name");
         TextField nimi = new TextField("");
-        Button alustaButton = new Button("Alusta mängu");
+        Button alustaButton = new Button("Play");
 
         alustaButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
                 event -> {
@@ -201,13 +204,16 @@ public class Mang extends Application{
         //Loome uue lava
         Stage lopp_lava = new Stage();
 
-        Button sulgeButton = new Button("Välju");
-        Button uuestiButton = new Button("Mängi uuesti");
+        Label skoor = new Label();
+        skoor.setText(String.valueOf("Total points: " + kasutaja.getPunktid() + " points"));
+
+        Button sulgeButton = new Button("Exit");
+        Button uuestiButton = new Button("Next word");
 
         //Asetame teksti ja nupu üksteiste peale
         VBox vBox = new VBox();
         vBox.setAlignment(Pos.CENTER);
-        vBox.getChildren().addAll(uuestiButton, sulgeButton);
+        vBox.getChildren().addAll(skoor, uuestiButton, sulgeButton);
 
         //Kui vajutatakse nuppu välju siis pannakse rakendus kinni
         sulgeButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
