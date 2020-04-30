@@ -1,26 +1,40 @@
-piim
-muna
-veoauto
-õlu
-spioon
-jänesEnterword
-Enterword
-Enterword
-Enterword
-Enterword
-Enterword
-Enterword
-Enterword
-Enterword
-Enterword
-Enteraword
-Enter a word
-Enter a word
-Enter a word
-Enter a word
-Enter a word
-Enter a word
-Enter a word
-Enter a word
-testtest
-Rabbitear
+friend
+government
+however
+human
+hundred
+husband
+interesting
+international
+knowledge
+management
+memory
+mention
+message
+opportunity
+performance
+population
+relationship
+responsibility
+significant
+somebody
+successful
+technology
+throughout
+understand
+yourself
+administration
+agreement
+approach
+authority
+campaign
+challenge
+collection
+conference
+democratic
+direction
+economy
+environment
+everybody
+financial
+generation
