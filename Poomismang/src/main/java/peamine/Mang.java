@@ -224,9 +224,9 @@ public class Mang extends Application{
                 event -> {
                     try (DataOutputStream failiVäljnd = new DataOutputStream(new FileOutputStream("Viimane_tulemus.txt"))){
                         failiVäljnd.writeUTF("Viimane tulemus:" + "\n");
-                        failiVäljnd.writeUTF("Nimi: " + kasutaja.getNimi() + " punktid:" + String.valueOf(kasutaja.getPunktid()) + " kuupäev: ");
-                        failiVäljnd.writeUTF(String.valueOf(LocalDateTime.now()));
-                        failiVäljnd.writeUTF("\n");
+                        failiVäljnd.writeUTF("Nimi: " + kasutaja.getNimi() + "\n");
+                        failiVäljnd.writeUTF("Punktid: " + String.valueOf(kasutaja.getPunktid()) + "\n");
+                        failiVäljnd.writeUTF("Kuupäev: " + String.valueOf(LocalDateTime.now()));
                         } catch (IOException e) {
                     }
 
