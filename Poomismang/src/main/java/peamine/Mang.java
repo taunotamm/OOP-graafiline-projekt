@@ -223,7 +223,8 @@ public class Mang extends Application{
         sulgeButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
                 event -> {
                     try (DataOutputStream failiVäljnd = new DataOutputStream(new FileOutputStream("Viimane_tulemus.txt"))){
-                        failiVäljnd.writeUTF(kasutaja.getNimi() + " " + String.valueOf(kasutaja.getPunktid()) + " ");
+                        failiVäljnd.writeUTF("Viimane tulemus:" + "\n");
+                        failiVäljnd.writeUTF("Nimi: " + kasutaja.getNimi() + " punktid:" + String.valueOf(kasutaja.getPunktid()) + " kuupäev: ");
                         failiVäljnd.writeUTF(String.valueOf(LocalDateTime.now()));
                         failiVäljnd.writeUTF("\n");
                         } catch (IOException e) {
