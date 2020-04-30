@@ -16,7 +16,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import javafx.scene.shape.*;
+
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 import static javafx.scene.paint.Color.BLACK;
@@ -215,9 +219,18 @@ public class Mang extends Application{
         vBox.setAlignment(Pos.CENTER);
         vBox.getChildren().addAll(skoor, uuestiButton, sulgeButton);
 
-        //Kui vajutatakse nuppu välju siis pannakse rakendus kinni
+        //Kui vajutatakse nuppu välju siis pannakse rakendus kinni ja kirutatakse tulemused faili.
         sulgeButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
-                event -> System.exit(0));
+                event -> {
+                    try (DataOutputStream failiVäljnd = new DataOutputStream(new FileOutputStream("Viimane_tulemus.txt"))){
+                        failiVäljnd.writeUTF(kasutaja.getNimi() + " " + String.valueOf(kasutaja.getPunktid()) + " ");
+                        failiVäljnd.writeUTF(String.valueOf(LocalDateTime.now()));
+                        failiVäljnd.writeUTF("\n");
+                        } catch (IOException e) {
+                    }
+
+
+                    System.exit(0);});
 
         uuestiButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
                 event -> {
