@@ -14,18 +14,17 @@ public class Peaklass {
         return sõnad.get((int) (Math.random()*sõnadeArvListiIndeksina));
     }
 
-    public static void lisaSõna(String sõne) throws IOException {
-        try(FileWriter fw = new FileWriter(sõne, true);
-            BufferedWriter bw = new BufferedWriter(fw);
-            PrintWriter out = new PrintWriter(bw))
-        {
-            out.println("the text");
-            //more code
-            out.println("more text");
-            //more code
-        } catch (IOException e) {
-            //exception handling left as an exercise for the reader
+    public static void lisaSõna(String failinimi, String sõne) throws IOException {
+        if(sõne.length() > 7){
+            try(FileWriter fw = new FileWriter(failinimi, true);
+                BufferedWriter bw = new BufferedWriter(fw);
+                PrintWriter out = new PrintWriter(bw))
+            {
+                out.println(sõne);
+            } catch (IOException e) {
+            }
         }
+
     }
 
     public static void main(String[] args) throws IOException {

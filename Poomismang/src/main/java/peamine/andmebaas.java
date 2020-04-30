@@ -11,7 +11,8 @@ public class andmebaas {
                 String rida = faililugeja.readLine();
                 if (rida == null)
                     break;
-                sõnad.add(rida);
+                if(!sõnad.contains(rida))
+                    sõnad.add(rida);
             }
         }
         return sõnad;

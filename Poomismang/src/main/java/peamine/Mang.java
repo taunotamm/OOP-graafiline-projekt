@@ -109,11 +109,6 @@ public class Mang extends Application{
         String[] kasutajaValik = new String[1];
         nupp.addEventHandler(MouseEvent.MOUSE_CLICKED,
                 event -> {
-                    try {
-                        lisaSõna("sonad.txt");
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     kasutajaValik[0] = tekstiVäli.getText();
                 if(!pakutud.contains(kasutajaValik[0])){
                     pakutud.add(kasutajaValik[0]);
@@ -157,23 +152,9 @@ public class Mang extends Application{
                 tekstiVäli.setText("");
             });
 
-        //Drawing a Rectangle
-        Rectangle rectangle = new Rectangle();
-
-        //Setting the properties of the rectangle
-        rectangle.setWidth(300.0);
-        rectangle.setHeight(150.0);
-        rectangle.setFill(BLACK);
-
-        Line joon = new Line();
-        joon.setStartX(80);
-        joon.setStartY(0);
-        joon.setEndX(80);
-        joon.setEndY(150);
-
 
         hBox.getChildren().addAll(tekstiVäli, nupp);
-        vBox.getChildren().addAll(jubaPakutud, hBox, äraArvatud, joon, vastus, kasutajaAndmed);
+        vBox.getChildren().addAll(jubaPakutud, hBox, äraArvatud, vastus, kasutajaAndmed);
 
         juur.getChildren().add(vBox);  // lõuend lisatakse juure alluvaks
         Scene mangStseen = new Scene(juur);  // luuakse stseen
@@ -198,8 +179,28 @@ public class Mang extends Application{
                     }
                 });
 
+        Label sisestaInfo = new Label("Enter a word longer than 7 letters");
+        Button lisaSõna = new Button();
+        lisaSõna.setText("Submit");
+        TextField uusSõna = new TextField("Enter a word");
+        Label kinnitus = new Label("");
+        HBox lisamine = new HBox();
+        lisamine.getChildren().addAll(lisaSõna, uusSõna);
+
+        lisaSõna.addEventHandler(MouseEvent.MOUSE_CLICKED,
+                event ->  {
+                    String sisend = uusSõna.getText();
+
+                    try {
+                        lisaSõna("sonad.txt", sisend);
+                        kinnitus.setText("Success!");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                });
+
         VBox vBox = new VBox();
-        vBox.getChildren().addAll(nimeLabel, nimi, alustaButton);
+        vBox.getChildren().addAll(nimeLabel, nimi, alustaButton, sisestaInfo,lisamine, kinnitus);
         vBox.setAlignment(Pos.CENTER);
 
         Scene algusStseen = new Scene(vBox);
