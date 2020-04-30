@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import static javafx.scene.paint.Color.BLACK;
+import static peamine.Peaklass.lisaSõna;
 
 public class Mang extends Application{
     public Stage peaLava;
@@ -104,7 +105,12 @@ public class Mang extends Application{
         String[] kasutajaValik = new String[1];
         nupp.addEventHandler(MouseEvent.MOUSE_CLICKED,
                 event -> {
-                kasutajaValik[0] = tekstiVäli.getText();
+                    try {
+                        lisaSõna("sonad.txt");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    kasutajaValik[0] = tekstiVäli.getText();
                 if(!pakutud.contains(kasutajaValik[0])){
                     pakutud.add(kasutajaValik[0]);
                     jubaPakutud.setText("Guess");
