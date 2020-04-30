@@ -88,4 +88,4 @@ et kaks pead on tõesti kaks pead. Kui ühel on midagi ununenud, siis teisel on 
 Jäime oma tehtud tööga rahule. Kõik töötab täpselt nii nagu olime plaaninud, selleks testisime pidevalt oma 
 programmi erinevate parameetritega. Kasutajale võib jääda mulje, et tegu ei ole võib-olla just kõige
 atraktiivsema graafilise väljundiga, kuid see oli tehtud taotuslikult, et õppimisel ei kaoks ära kasutaja
-tähelepanu, seetõttu on ka programmi graafilisel väljundil läbivalt akadeemiliselt valge taust.
+tähelepanu, seetõttu on ka programmi graafiline väljund läbivalt akadeemiliselt valge taust.
