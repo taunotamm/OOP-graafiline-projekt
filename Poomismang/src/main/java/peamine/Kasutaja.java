@@ -1,9 +1,18 @@
+/**
+ * Kasutaja klass kasutaja loomiseks
+ *
+ * Autorid: Tauno Tamm ja Eero Ääremaa
+ */
+
 package peamine;
 
 public class Kasutaja {
 
+    // Isendiväljad kasutajanime ja punktide salvestamiseks
     private String nimi;
     private int punktid;
+
+    // Loome konstruktori ning get ja set meetodid
 
     public Kasutaja(String nimi, int punktid) {
         this.nimi = nimi;
@@ -24,8 +33,5 @@ public class Kasutaja {
 
     public void setPunktid(int punktid) {
         this.punktid = punktid;
-    }
-
-    public Kasutaja() {
     }
 }
