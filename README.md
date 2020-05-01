@@ -37,10 +37,10 @@ luua õppijale/kasutajale sobilikku keeleõppe õhkkonda.
 ### Programmi ülesehitusest:
 
 Koosneb 4 klassist:
-    * anbmebaas
-    * Kasutaja
-    * Mang
-    * Peaklass
+* anbmebaas
+* Kasutaja
+* Mang
+* Peaklass
 
 ### Klass andmebaas
 
