@@ -2,6 +2,8 @@
 
 ## Autorid: Tauno Tamm ja Eero Ääremaa
 
+LINK: https://github.com/taunotamm/OOP-graafiline-projekt
+
 Meie ideeks oli luua inglise keelne sõnade õppimise mäng, mis võimaldaks
 algajal ja miks mitte ka väga heal inglise keele kõnelejaid õppida uusi
 sõnu. Selle jaoks lõime programmi, mis töötab javaFx baasil. 
